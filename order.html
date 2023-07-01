@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="validation.js" defer> </script>
+    <title>VCafe</title>
+</head>
+
+<body>
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><img src="1.jfif" alt="logo"></div>
+            <li> <a href="index.html"> Home </a> </li>
+            <li> <a href="about.html"> About </a> </li>
+            <li> <a href="services.html"> Services </a> </li>
+            <li> <a href="items.html"> Items </a> </li>
+            <li> <a href="order.html"> Order </a> </li>
+        </ul>
+    </nav>
+
+
+
+    <h1 style="text-align:center">ORDER NOW!</h1>
+    <form class="regform" name="regform" id="regform"
+        onsubmit="return Validation() && CheckPassword() && PhoneNumber()">
+        <div class="container">
+
+            <label><b>Customer Name : </b></label>
+            <input type="text" placeholder="Enter Customer Name" name="username" id="username">
+
+            <label><b>Passcode :</b> </label>
+            <input type="password" placeholder="Enter Passcode" name="password" id="password">
+
+            <label><b> Phone Number :</b> </label>
+            <input type="text" placeholder="Enter Phone Number" name="phone" id="phone">
+
+            <label><b>Delivery Address : </b> </label>
+            <input type="text" placeholder="Enter Address" name="address" id="address">
+
+            <label><b>Enter item to Purchase : </b> </label>
+            <input type="text" placeholder="Enter item to purchase" name="message" id="message">
+
+            <label><b>Mode of Payment : </b> </label><br>
+            <input type="radio" id="Cash on Delivery" name="fav_language" value="HTML">
+            <label for="html">Cash on Delivery</label><br>
+            <input type="radio" id="Pay Online" name="fav_language" value="CSS">
+            <label for="javascript">Pay Online</label>
+                <br>
+
+            <button type="submit"><b>Order </b></button>
+
+
+        </div>
+    </form>
+
+    <script src="resp.js"></script>
+</body>
+
+</html>
